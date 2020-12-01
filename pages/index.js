@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import Wave from "../components/Wave";
 import { jsx, css } from "@emotion/react";

@@ -2,12 +2,14 @@
 /** @jsx jsx */
 import Wave from "../components/Wave";
 import { jsx, css } from "@emotion/react";
+import Card from "../components/Card";
 
 export default function Home() {
   return (
     <div
       css={css`
-        font-family: "NEXON Lv1 Gothic OTF Light";
+        font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+        font-weight: 100;
       `}
     >
       <div
@@ -62,7 +64,7 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: 130vh;
+          height: 160vh;
           background: linear-gradient(to bottom, white, #3586ff);
           align-items: center;
         `}
@@ -161,6 +163,78 @@ export default function Home() {
             AWS CREDIT 2000${" "}
           </span>
           탕진!
+        </div>
+        <div
+          css={css`
+            margin-top: 300px;
+            letter-spacing: 40px;
+            color: white;
+            opacity: 0.5;
+          `}
+        >
+          그럼 탕진을 어떻게
+        </div>
+        <div
+          css={css`
+            font-weight: 900;
+            font-size: 100px;
+            font-family: "Montserrat", sans-serif;
+            color: white;
+          `}
+        >
+          HOW?
+        </div>
+        <div
+          css={css`
+            letter-spacing: 76px;
+            color: white;
+          `}
+        >
+          할거냐구요?
+        </div>
+        <div
+          data-aos="fade-up"
+          css={css`
+            margin-top: 50px;
+            font-size: 50px;
+            color: white;
+          `}
+        >
+          <span
+            css={css`
+              font-family: "Montserrat", sans-serif;
+              font-weight: 900;
+              font-size: 60px;
+            `}
+          >
+            3
+          </span>
+          개의 팀으로 나뉘어서!
+        </div>
+      </div>
+      <div
+        css={css`
+          height: 50vh;
+          background: linear-gradient(to bottom, #3586ff, black);
+        `}
+      />
+      <div
+        css={css`
+          height: 150vh;
+          width: 100%;
+          background: black;
+          flex-direction: column;
+          display: flex;
+        `}
+      >
+        <div
+          css={css`
+            margin-top: 25vh;
+          `}
+        >
+          <Card team="Team 1" name="김병규" color="#42ebcc" dir="flip-right" />
+          <Card team="Team 2" name="신동선" color="#42ebcc" dir="flip-left" />
+          <Card team="Team 3" name="어" color="#42ebcc" dir="flip-right" />
         </div>
       </div>
     </div>

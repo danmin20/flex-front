@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;900&display=swap');
+
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave.png);
+  background-size: 1000px 100px;
+  margin-bottom: auto;
+  top: 0;
+  margin-top: 200px;
+}
+
+.wave.wave1 {
+  animation: animate1 8s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.wave.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.wave.wave3 {
+  animation: animate3 2s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+.wave.wave4 {
+  animation: animate4 5s linear infinite;
+  z-index: 997;
+  opacity: 0.1;
+  animation-delay: 0s;
+  bottom: 10px;
+}
+
+@keyframes animate1 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}

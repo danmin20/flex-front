@@ -64,7 +64,7 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: 160vh;
+          height: 1000px;
           background: linear-gradient(to bottom, white, #3586ff);
           align-items: center;
         `}
@@ -84,7 +84,6 @@ export default function Home() {
             font-size: 100px;
             font-family: "Montserrat", sans-serif;
             color: #3586ff;
-            opacity: 0.5;
           `}
         >
           WHY?
@@ -139,11 +138,11 @@ export default function Home() {
         </div>
         <div
           css={css`
-            letter-spacing: 30px;
+            letter-spacing: 60px;
             color: white;
           `}
         >
-          뭐 하는 모임이라구요?
+          뭘 했냐구요?
         </div>
         <div
           data-aos="fade-up"
@@ -214,27 +213,132 @@ export default function Home() {
       </div>
       <div
         css={css`
-          height: 50vh;
+          height: 1500px;
           background: linear-gradient(to bottom, #3586ff, black);
         `}
       />
       <div
         css={css`
-          height: 150vh;
+          height: 1700px;
           width: 100%;
           background: black;
           flex-direction: column;
           display: flex;
         `}
       >
+        <div>
+          <Card
+            team="Team 1"
+            name="김병규"
+            member={["고명진", "김민태", "김병규", "우수연"]}
+            color="#42ebcc"
+            dir="flip-right"
+            content="Elesticsearch를 이용한 게임 리뷰 검색"
+          />
+          <Card
+            team="Team 2"
+            name="신동선"
+            member={["신동선", "윤서현", "이시연"]}
+            color="#FFA62A"
+            dir="flip-left"
+            content="여기도 Elesticsearch예여"
+          />
+          <Card
+            team="Team 3"
+            name="어"
+            member={["배진수", "이정민", "황지혜"]}
+            color="#FFF943"
+            dir="flip-right"
+            content="진수도 Elesticsearch 써보고 싶대여"
+          />
+        </div>
         <div
           css={css`
-            margin-top: 25vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
           `}
         >
-          <Card team="Team 1" name="김병규" color="#42ebcc" dir="flip-right" />
-          <Card team="Team 2" name="신동선" color="#42ebcc" dir="flip-left" />
-          <Card team="Team 3" name="어" color="#42ebcc" dir="flip-right" />
+          <div
+            css={css`
+              margin-top: 300px;
+              letter-spacing: 40px;
+              color: white;
+            `}
+          >
+            그래서 대체 어디서
+          </div>
+          <div
+            css={css`
+              font-weight: 900;
+              font-size: 100px;
+              font-family: "Montserrat", sans-serif;
+              color: #42ebcc;
+            `}
+          >
+            WHERE?
+          </div>
+          <div
+            css={css`
+              letter-spacing: 60px;
+              color: white;
+            `}
+          >
+            활동이냐구요?
+          </div>
+          <div
+            data-aos="fade-up"
+            css={css`
+              margin-top: 50px;
+              font-size: 50px;
+              color: white;
+              text-align: center;
+            `}
+          >
+            <a
+              css={css`
+                font-family: "Montserrat", sans-serif;
+                font-weight: 900;
+                font-size: 60px;
+                transition: 0.3s;
+                color: #ffa62a;
+                cursor: pointer;
+                :hover {
+                  font-size: 80px;
+                  transition: 0.3s;
+                }
+              `}
+              href="https://www.facebook.com/ausgkr/"
+            >
+              AUSG !!!
+            </a>
+            <div
+              css={css`
+                font-family: "Montserrat", sans-serif;
+                font-weight: 900;
+                font-size: 20px;
+                margin-top: 10px;
+                color: #fff943;
+              `}
+              className="click"
+            >
+              CLICK
+            </div>
+          </div>
+        </div>
+        <div
+          css={css`
+            color: white;
+            margin-top: auto;
+            margin-left: auto;
+            padding: 50px 100px;
+            font-family: "Cafe24Dangdanghae";
+          `}
+        >
+          <div>Coded by Lee Jeongmin</div>
+          <div>Designed by Lee Jeongmin</div>
         </div>
       </div>
     </div>

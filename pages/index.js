@@ -3,6 +3,7 @@
 import Wave from "../components/Wave";
 import { jsx, css } from "@emotion/react";
 import Card from "../components/Card";
+import { teamList } from "../data/team";
 
 export default function Home() {
   return (
@@ -227,30 +228,20 @@ export default function Home() {
         `}
       >
         <div>
-          <Card
-            team="Team 1"
-            name="김병규"
-            member={["고명진", "김민태", "김병규", "우수연"]}
-            color="#42ebcc"
-            dir="flip-right"
-            content="Elesticsearch를 이용한 게임 리뷰 검색"
-          />
-          <Card
-            team="Team 2"
-            name="신동선"
-            member={["신동선", "윤서현", "이시연"]}
-            color="#FFA62A"
-            dir="flip-left"
-            content="여기도 Elesticsearch예여"
-          />
-          <Card
-            team="Team 3"
-            name="어"
-            member={["배진수", "이정민", "황지혜"]}
-            color="#FFF943"
-            dir="flip-right"
-            content="진수도 Elesticsearch 써보고 싶대여"
-          />
+          {teamList.map((item, idx) => {
+            return <Card
+              key={idx}
+              team={item.team}
+              name={item.name}
+              member={item.member}
+              color={item.color}
+              dir={item.dir}
+              content={item.content}
+              modalContent={item.modalContent}
+            />
+          })
+          }
+
         </div>
         <div
           css={css`
@@ -268,7 +259,7 @@ export default function Home() {
               color: white;
             `}
           >
-            그래서 대체 어디서
+            그래서 대체 뭐하는
           </div>
           <div
             css={css`
@@ -282,11 +273,11 @@ export default function Home() {
           </div>
           <div
             css={css`
-              letter-spacing: 60px;
+              letter-spacing: 75px;
               color: white;
             `}
           >
-            활동이냐구요?
+            곳이냐구요?
           </div>
           <div
             data-aos="fade-up"
